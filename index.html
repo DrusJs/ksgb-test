@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title></title>
+</head>
+<body>
+
+<div id="container">
+    <div class="main-menu-container">
+        <div class="main-menu-item" id="button-favorite" data-menu="menu-section1">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu1.svg" alt="1">
+            </div>
+            <div class="main-menu-item-desc">Личный кабинет</div>
+        </div>
+        <div class="main-menu-item" data-menu="menu-section2">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu2.svg" alt="2">
+            </div>
+            <div class="main-menu-item-desc">Размер участка</div>
+        </div>
+        <div class="main-menu-item" data-menu="menu-section3">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu3.svg" alt="3">
+            </div>
+            <div class="main-menu-item-desc">Раскладка плитки</div>
+        </div>
+        <div class="main-menu-item" data-menu="menu-section4">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu4.svg" alt="4">
+            </div>
+            <div class="main-menu-item-desc">Торец заливки</div>
+        </div>
+        <div class="main-menu-item" data-menu="menu-section5">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu5.svg" alt="5">
+            </div>
+            <div class="main-menu-item-desc">Вид ограды</div>
+        </div>
+        <div class="main-menu-item" data-menu="menu-section6">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu6.svg" alt="6">
+            </div>
+            <div class="main-menu-item-desc">Цвет гранита</div>
+        </div>
+        <div class="main-menu-item js-toggle">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu7.svg" alt="7">
+            </div>
+            <div class="main-menu-item-desc">Фон окружения</div>
+        </div>
+        <div class="main-menu-item disabled" data-menu="menu-section8">
+            <div class="main-menu-item-icon">
+                <img src="img/svg/menu8.svg" alt="8">
+            </div>
+            <div class="main-menu-item-desc">Корзина</div>
+        </div>
+    </div>
+
+    <div class="menu"> 
+        <div class="menu-block scroll-container" id="menu-section1">
+            <div class="top-flex">
+                <p class="name-text">Парфёнова Ирина Сергеевна</p>
+                <button class="button-primary button-fit shad">Выйти</button>
+            </div>
+            <div class="input-wrapper">
+                <label>Клиент <span>|</span></label>
+                <input type="text" value="+7 (925) 145-89-29" placeholder="+7 (925) 145-89-29">
+            </div>
+            <button class="button-primary button-fit">Начать работу с клиентом</button>
+            <div class="favorite-accordion">
+                <div class="favorite-accordion-head">
+                    <img src="img/svg/favlg.svg" alt="">
+                    <p>Избранное клиента</p>
+                    <img class="rotate-chev" src="img/svg/chevron.svg" alt="">
+                </div>
+                <div class="favorite-accordion-dropdown">
+                    <div class="favorite-accordion-item">
+                        <div class="favorite-accordion-info">
+                            <img src="img/prev-item.png" alt="" class="prev">
+                            <div>
+                                <p>№00000000</p>
+                                <p>г. Нижний новгород</p>
+                            </div>
+                            <span>ПР №123</span>
+                        </div>
+                        <div class="favorite-accordion-actions">
+                            <button class="icon-button">
+                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                Предрасчет
+                            </button>
+                            <button class="icon-button disabled">
+                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                Отправить клиенту
+                            </button>
+                            <button class="icon-button">
+                                <img src="img/svg/delete.svg" alt="Удалить">
+                                Удалить
+                            </button>
+                        </div>
+                        <div class="favorite-accordion-price">                        
+                            <button class="price-visible-button"></button>
+                            <div class="favorite-item-price">
+                                <span class="price">119 781 ₽</span>
+                                <span class="price-prev">160 915 ₽</span>
+                                <span class="price-act">- 13 751 ₽</span>
+                                <span class="price-percent">- 25 %</span>
+                            </div>
+                        </div>
+                        <div class="favorite-accordion-input">
+                            <div class="input-wrapper input-border">
+                                <label>Комментарий <span>|</span></label>
+                                <input type="text" value="клиент ушел подумать" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separate"></div>
+                    <div class="favorite-accordion-item">
+                        <div class="favorite-accordion-info">
+                            <img src="img/prev-item.png" alt="" class="prev">
+                            <div>
+                                <p>№00000000</p>
+                                <p>г. Нижний новгород</p>
+                            </div>
+                            <span class="edit">ПР №___</span>
+                        </div>
+                        <div class="favorite-accordion-actions">
+                            <button class="icon-button">
+                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                Предрасчет
+                            </button>
+                            <button class="icon-button disabled">
+                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                Отправить клиенту
+                            </button>
+                            <button class="icon-button disabled">
+                                <img src="img/svg/delete.svg" alt="Удалить">
+                                Удалить
+                            </button>
+                        </div>
+                        <div class="favorite-accordion-price">                        
+                            <button class="price-visible-button"></button>
+                            <div class="favorite-item-price">
+                                <span class="price">119 781 ₽</span>
+                                <span class="price-prev">160 915 ₽</span>
+                                <span class="price-act">- 13 751 ₽</span>
+                                <span class="price-percent">- 25 %</span>
+                            </div>
+                        </div>
+                        <div class="favorite-accordion-input">
+                            <div class="input-wrapper input-border">
+                                <label>Комментарий <span>|</span></label>
+                                <input type="text" value="клиент ушел подумать" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separate"></div>
+                    <div class="favorite-accordion-item">
+                        <div class="favorite-accordion-info">
+                            <img src="img/prev-item.png" alt="" class="prev">
+                            <div>
+                                <p>№00000000</p>
+                                <p>г. Нижний новгород</p>
+                            </div>
+                            <span>ПР №123</span>
+                        </div>
+                        <div class="favorite-accordion-actions">
+                            <button class="icon-button">
+                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                Предрасчет
+                            </button>
+                            <button class="icon-button">
+                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                Отправить клиенту
+                            </button>
+                            <button class="icon-button">
+                                <img src="img/svg/delete.svg" alt="Удалить">
+                                Удалить
+                            </button>
+                        </div>
+                        <div class="favorite-accordion-price">                        
+                            <button class="price-visible-button"></button>
+                            <div class="favorite-item-price">
+                                <span class="price">119 781 ₽</span>
+                                <span class="price-prev">160 915 ₽</span>
+                                <span class="price-act">- 13 751 ₽</span>
+                                <span class="price-percent">- 25 %</span>
+                            </div>
+                        </div>
+                        <div class="favorite-accordion-input">
+                            <div class="input-wrapper input-border">
+                                <label>Комментарий <span>|</span></label>
+                                <input type="text" value="клиент ушел подумать" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section2">
+            <div class="top-flex">
+                <p class="menu-title">Размер участка</p>
+            </div>
+            <div class="scroll-container">
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i1" class="hidden">
+                    <label for="ms2-i1" class="radio-content">120х180</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i2" class="hidden">
+                    <label for="ms2-i2" class="radio-content">120х210</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i3" class="hidden">
+                    <label for="ms2-i3" class="radio-content">150х200</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i4" class="hidden">
+                    <label for="ms2-i4" class="radio-content">150х240</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i5" class="hidden">
+                    <label for="ms2-i5" class="radio-content">180х200</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i6" class="hidden">
+                    <label for="ms2-i6" class="radio-content">180х210</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i7" class="hidden">
+                    <label for="ms2-i7" class="radio-content">180х220</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i8" class="hidden">
+                    <label for="ms2-i8" class="radio-content">180х240</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i9" class="hidden">
+                    <label for="ms2-i9" class="radio-content">200х200</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i10" class="hidden">
+                    <label for="ms2-i10" class="radio-content">200х250</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i11" class="hidden">
+                    <label for="ms2-i11" class="radio-content">210х180</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i12" class="hidden">
+                    <label for="ms2-i12" class="radio-content">210х240</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i13" class="hidden">
+                    <label for="ms2-i13" class="radio-content">210х300</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i14" class="hidden">
+                    <label for="ms2-i14" class="radio-content">220х180</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i15" class="hidden">
+                    <label for="ms2-i15" class="radio-content">220х220</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i16" class="hidden">
+                    <label for="ms2-i16" class="radio-content">240х240</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i17" class="hidden">
+                    <label for="ms2-i17" class="radio-content">240х300</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i18" class="hidden">
+                    <label for="ms2-i18" class="radio-content">300х210</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i19" class="hidden">
+                    <label for="ms2-i19" class="radio-content">90х180</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i20" class="hidden">
+                    <label for="ms2-i20" class="radio-content">ГБ</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms2-i1" id="ms2-i21" class="hidden">
+                    <label for="ms2-i21" class="radio-content">тестовый</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section3">
+            <div class="top-flex">
+                <p class="menu-title">Раскладка плитки</p>
+            </div>
+            <div class="scroll-container">
+                <div class="accordion">
+                    <div class="accordion-head">
+                        <span>240х300 Плитка SLOTTED</span>
+                    </div>
+                    <div class="accordion-dropdown">            
+                       <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i1" class="hidden">
+                            <label for="ms3-i1" class="radio-content">
+                                240х300 Плитка стиль1 SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i2" class="hidden">
+                            <label for="ms3-i2" class="radio-content">
+                                240х300 Плитка стиль2 SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i3" class="hidden">
+                            <label for="ms3-i3" class="radio-content">
+                                240х300 Плитка стиль1 отзеркален SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i4" class="hidden">
+                            <label for="ms3-i4" class="radio-content">
+                                240х300 Плитка стиль1 SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i5" class="hidden">
+                            <label for="ms3-i5" class="radio-content">
+                                240х300 Плитка стиль3 SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="ms3-i1" id="ms3-i6" class="hidden">
+                            <label for="ms3-i6" class="radio-content">
+                                240х300 Плитка стиль2 SLOTTED
+                                <img src="https://test3d.danila-master.ru/uploads/images/86804ac9a585e7fa41c1060f35cc30b1.png" alt="">
+                            </label>
+                        </div>  
+                    </div>
+                </div> 
+            </div>      
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section4">
+            <div class="top-flex">
+                <p class="menu-title">Торец заливки</p>
+            </div>
+            <div class="scroll-container">
+                <div class="radio-item">
+                    <input type="radio" name="ms4-i1" id="ms4-i1" class="hidden">
+                    <label for="ms4-i1" class="radio-content">240х300 облицовка плиткой</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="ms4-i1" id="ms4-i2" class="hidden">
+                    <label for="ms4-i2" class="radio-content">240х300 без облицовки</label>
+                </div> 
+            </div>  
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section5">
+            <div class="menu-block-inner">
+                <div class="filter-head">
+                    <div class="filter-icon">
+                        <img src="img/svg/filter-icon.svg" alt="Фильтр">
+                        <span class="filter-count">2</span>
+                    </div>
+                    <div class="filter-head-text">
+                        <span>Открыть фильтр</span>
+                        <span>Закрыть фильтр</span>
+                    </div>
+                    <div class="filter-result-count">
+                        <span class="result-count">0 результатов</span>
+                        <img src="img/svg/arrow-select.svg" alt="arr">
+                    </div>
+                </div>
+                <div class="filter-form">
+                    <form>
+                        <div class="form-overflow">
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Тип ограды</h3><input class="reset-fieldset" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_0_0" data-filter-id="1" data-id="48" type="checkbox"><label for="filter_8_0_0"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_polnaya_0.png" <span="">Полная</label></div>
+                                    <div class="field-content-item"><input id="filter_8_0_1" data-filter-id="1" data-id="49" type="checkbox"><label for="filter_8_0_1"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_ugolki_1.png" <span="">Уголки</label></div>
+                                    <div class="field-content-item"><input id="filter_8_0_2" data-filter-id="1" data-id="50" type="checkbox"><label for="filter_8_0_2"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_perila_2.png" <span="">Перила</label></div>
+                                    <div class="field-content-item"><input id="filter_8_0_3" data-filter-id="1" data-id="53" type="checkbox"><label for="filter_8_0_3"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_p-obraznaya_3.png" <span="">П-образная</label></div>
+                                    <div class="field-content-item"><input id="filter_8_0_4" data-filter-id="1" data-id="56" type="checkbox"><label for="filter_8_0_4"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_tolko-stolbiki_4.png" <span="">Только столбики</label></div>
+                                    <div
+                                        class="field-content-item"><input id="filter_8_0_5" data-filter-id="1" data-id="57" type="checkbox"><label for="filter_8_0_5"><img src="https://test3d.danila-master.ru/uploads/images/tip-ogrady_s-vxodnoj-gruppoj_5.png" <span="">С входной группой</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Форма балки</h3><input class="reset-fieldset" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_1_0" data-filter-id="2" data-id="51" type="radio" name="filter_8_1"><label for="filter_8_1_0"><span>Прямая</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_1_1" data-filter-id="2" data-id="52" type="radio" name="filter_8_1"><label for="filter_8_1_1"><span>Фигурная</span></label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Крепление балки</h3><input class="reset-fieldset" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_2_0" data-filter-id="3" data-id="58" type="checkbox"><label for="filter_8_2_0"><span>На плитке</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_2_1" data-filter-id="3" data-id="59" type="checkbox"><label for="filter_8_2_1"><span>В подвес</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_2_2" data-filter-id="3" data-id="60" type="checkbox"><label for="filter_8_2_2"><span>В два ряда</span></label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Столбики</h3><input class="reset-fieldset" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_3_0" data-filter-id="4" data-id="61" type="checkbox"><label for="filter_8_3_0"><span>Без столбиков</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_3_1" data-filter-id="4" data-id="62" type="checkbox"><label for="filter_8_3_1"><span>Без откосов</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_3_2" data-filter-id="4" data-id="63" type="checkbox"><label for="filter_8_3_2"><span>С откосами</span></label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Стол / Лавочка</h3><input class="reset-fieldset" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_4_0" data-filter-id="5" data-id="64" type="radio" name="filter_8_4"><label for="filter_8_4_0"><span>Есть</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_4_1" data-filter-id="5" data-id="65" type="radio" name="filter_8_4"><label for="filter_8_4_1"><span>Нет</span></label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Шары</h3><input class="reset-fieldset active" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_5_0" data-filter-id="6" data-id="46" type="radio" name="filter_8_5"><label for="filter_8_5_0"><span>Есть</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_5_1" data-filter-id="6" data-id="47" type="radio" name="filter_8_5"><label for="filter_8_5_1"><span>Нет</span></label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="field-head">
+                                    <h3>Калитка</h3><input class="reset-fieldset active" type="reset" value="Сбросить"><img src="img/svg/arrow-select.svg" alt="arr"></div>
+                                <div class="field-content">
+                                    <div class="field-content-item"><input id="filter_8_6_0" data-filter-id="7" data-id="54" type="radio" name="filter_8_6"><label for="filter_8_6_0"><span>Есть</span></label></div>
+                                    <div class="field-content-item"><input id="filter_8_6_1" data-filter-id="7" data-id="55" type="radio" name="filter_8_6"><label for="filter_8_6_1"><span>Нет</span></label></div>
+                                </div>
+                            </fieldset>
+                    </div>
+                    <div class="form-action">
+                        <div class="accept-filter">Применить</div>
+                        <input class="reset-filter" type="reset" value="Сбросить всё">
+                    </div>
+                </form>
+                </div>
+                <div class="menu-scroll">
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i1" class="hidden">
+                        <label for="ms5-i1" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/6feb339fbfc9281bc091f79b1a52a9ed.png" alt="">
+                            2201804 перила 180х220х40
+                        </label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i2" class="hidden">
+                        <label for="ms5-i2" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/ba093c80cc3328e28f5a382693def1e4.png" alt="">
+                            2201805 П-образная 180х220х40
+                        </label>
+                    </div> 
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i3" class="hidden">
+                        <label for="ms5-i3" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/8c02a76e004f5f04732fc6ba1a618024.png" alt="">
+                            2201806 полная 180х220х40
+                        </label>
+                    </div> 
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i4" class="hidden">
+                        <label for="ms5-i4" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/640ec5e78c3fec9cd3f0d9a5182bddbd.png" alt="">
+                            2201807 входная группа 180х220х40
+                        </label>
+                    </div> 
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i5" class="hidden">
+                        <label for="ms5-i5" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/a9ac281418b9ad86ec18fe6160aca9be.png" alt="">
+                            2201808 уголки 180х220х40
+                        </label>
+                    </div> 
+                    <div class="radio-item">
+                        <input type="radio" name="ms5-i1" id="ms5-i6" class="hidden">
+                        <label for="ms5-i6" class="radio-content">
+                            <img src="https://test3d.danila-master.ru/uploads/images/cb4f65076ad309bb0af03d40162bea74.png" alt="">
+                            2201809 перила 180х220х40
+                        </label>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section6">
+            <div class="top-flex">
+                <p class="menu-title">Плитка</p>
+            </div>  
+            <div class="material-actions">                
+                <div class="radio-item">
+                    <input type="radio" name="ms51-i1" id="ms51-i1" class="hidden" checked>
+                    <label for="ms51-i1" class="radio-content">Один материал</label>
+                </div>             
+                <div class="radio-item">
+                    <input type="radio" name="ms51-i1" id="ms51-i2" class="hidden">
+                    <label for="ms51-i2" class="radio-content">Разный материал</label>
+                </div> 
+            </div>
+            <div class="scroll-container no-spacing">
+                <div class="accordion">
+                    <div class="accordion-head">
+                        <span>Все детали</span>
+                    </div>
+                    <div class="accordion-dropdown">            
+                        <div class="radio-item">
+                            <input type="radio" name="ms52-i1" id="ms52-i1" class="hidden">
+                            <label for="ms52-i1" class="radio-content radio-row">
+                                <img src="img/material0.png" alt="">
+                                Гиббро
+                            </label>
+                        </div>            
+                        <div class="radio-item">
+                            <input type="radio" name="ms52-i1" id="ms52-i2" class="hidden">
+                            <label for="ms52-i2" class="radio-content radio-row">
+                                <img src="img/material1.png" alt="">
+                                Винга
+                            </label>
+                        </div>            
+                        <div class="radio-item">
+                            <input type="radio" name="ms52-i1" id="ms52-i3" class="hidden">
+                            <label for="ms52-i3" class="radio-content radio-row">
+                                <img src="img/material2.png" alt="">
+                                Димовский
+                            </label>
+                        </div>           
+                        <div class="radio-item">
+                            <input type="radio" name="ms52-i1" id="ms52-i4" class="hidden">
+                            <label for="ms52-i4" class="radio-content radio-row">
+                                <img src="img/material3.png" alt="">
+                                Мансуровский
+                            </label>
+                        </div>    
+                        
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-head">
+                        <span>Затирка</span>
+                    </div>
+                    <div class="accordion-dropdown">            
+                        <div class="radio-item">
+                            <input type="radio" name="ms53-i1" id="ms53-i1" class="hidden">
+                            <label for="ms53-i1" class="radio-content radio-row">
+                                <img src="img/material0.png" alt="">
+                                Гиббро
+                            </label>
+                        </div>            
+                        <div class="radio-item">
+                            <input type="radio" name="ms53-i1" id="ms53-i2" class="hidden">
+                            <label for="ms53-i2" class="radio-content radio-row">
+                                <img src="img/material1.png" alt="">
+                                Винга
+                            </label>
+                        </div>            
+                        <div class="radio-item">
+                            <input type="radio" name="ms53-i1" id="ms53-i3" class="hidden">
+                            <label for="ms53-i3" class="radio-content radio-row">
+                                <img src="img/material2.png" alt="">
+                                Димовский
+                            </label>
+                        </div>           
+                        <div class="radio-item">
+                            <input type="radio" name="ms53-i1" id="ms53-i4" class="hidden">
+                            <label for="ms53-i4" class="radio-content radio-row">
+                                <img src="img/material3.png" alt="">
+                                Мансуровский
+                            </label>
+                        </div>    
+                        
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="menu-block scroll-container" id="menu-section8">
+            <div class="top-flex">
+                <p class="menu-title">Корзина</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <div class="basket-container">
+        <div class="basket-head">
+            <span>Состав комплекта:</span>
+            <!-- <div class="basket-select hidden">
+                <input type="text" class="basket-input" placeholder="Подразделение выдачи">
+                <button>x</button>
+            </div> -->
+            <button class="price-visible-button" id="price-visible-button"></button>
+            <!-- <ul class="basket-select-dropdown">  
+                <li>Великий Новгород</li>
+                <li>Владимир</li>
+                <li>Волгоград</li>
+                <li>Воронеж</li>
+                <li>Екатеринбург</li>
+                <li>Иваново</li>
+                <li>Ижевск</li>
+                <li>Казань</li>
+                <li>Кемерово</li>
+                <li>Краснодар</li>
+                <li>Липецк</li>
+                <li>Москва</li>
+                <li>Нижний Новгород</li>
+                <li>Новосибирск</li>
+                <li>Орёл</li>
+                <li>Оренбург</li>
+                <li>Пенза</li>
+                <li>Пермь</li>
+                <li>Ростов-на-Дону</li>
+                <li>Рязань</li>
+                <li>Самара</li>
+                <li>Санкт-Петербург</li>
+                <li>Саратов</li>
+            </ul> -->
+        </div>
+        <div class="basket-inner">
+            <div class="basket-item">
+                <div class="basket-item-info">
+                    <span class="basket-item-title">Элемент комплекса Балка горизонтальная прямая 10*8*85 4х</span>
+                    <span class="basket-item-count">7 шт</span>
+                </div>
+                <div class="basket-item-price">
+                    <span class="price">119 781 ₽</span>
+                    <span class="price-prev">160 915 ₽</span>
+                    <span class="price-act">- 13 751 ₽</span>
+                    <span class="price-percent">- 25 %</span>
+                </div>
+            </div>
+            <div class="basket-item">
+                <div class="basket-item-info">
+                    <span class="basket-item-title">Элемент комплекса Балка горизонтальная прямая 10*8*85 4х</span>
+                    <span class="basket-item-count">7 шт</span>
+                </div>
+                <div class="basket-item-price">
+                    <span class="price">119 781 ₽</span>
+                    <span class="price-prev">160 915 ₽</span>
+                    <span class="price-act">- 13 751 ₽</span>
+                    <span class="price-percent">- 25 %</span>
+                </div>
+            </div>
+            <div class="basket-item">
+                <div class="basket-item-info">
+                    <span class="basket-item-title">Элемент комплекса Шар 10*8*85 4х</span>
+                    <span class="basket-item-count">2 шт</span>
+                </div>
+                <div class="basket-item-price">
+                    <span class="price">39 781 ₽</span>
+                    <span class="price-prev">60 915 ₽</span>
+                    <span class="price-act">- 3 751 ₽</span>
+                    <span class="price-percent">- 7 %</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="basket-total">
+            <p class="total-price">
+                Итого:
+                <span id="total-price">69 781</span> ₽                    
+            </p>
+            <span class="price-prev">156 915 ₽</span>
+            <span class="price-act">- 36 715 ₽</span>
+            <span class="price-percent">- 35 %</span>
+        </div> -->
+    </div>
+    
+    <div class="base-actions">
+        <button class="base-action-button basket-button" id="basket-button">
+            <img src="img/svg/icon_sostav.svg" alt="Image" width="30">            
+        </button>
+        <button class="base-action-button favorite-button" id="favorite-button">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5051 21.6667L12.3221 21.5482C12.0781 21.3704 11.8341 21.1926 11.5901 21.0148L4.3316 13.963C4.20961 13.8445 4.14861 13.7259 4.02662 13.6074C3.90463 13.4889 3.84363 13.3704 3.72164 13.2519C1.89175 10.763 2.13574 7.32594 4.3316 5.13334C6.58846 3.00001 9.94325 2.76297 12.5051 4.42223C15.0059 2.76297 18.4827 3.05927 20.6786 5.13334C22.8744 7.32594 23.1184 10.763 21.2276 13.1926C21.0446 13.4296 20.8616 13.6667 20.6786 13.9037L13.42 21.0148C13.298 21.1333 13.1761 21.1926 13.0541 21.3111C12.9321 21.4296 12.8101 21.4889 12.6881 21.6074L12.5051 21.6667ZM8.84532 3.94816C7.38141 3.94816 5.9175 4.48149 4.75857 5.54816C2.7457 7.50371 2.56271 10.6445 4.2706 12.837C4.3316 12.9556 4.45359 13.0741 4.51459 13.1333C4.63658 13.2519 4.69758 13.3704 4.81957 13.4889L12.0781 20.5408C12.2001 20.6593 12.3831 20.7778 12.5051 20.8963C12.5661 20.837 12.6271 20.837 12.6271 20.7778C12.7491 20.6593 12.8711 20.6 12.9931 20.4815L20.1906 13.4889C20.3736 13.3111 20.5566 13.0741 20.6786 12.8963C22.3865 10.6445 22.1425 7.56297 20.1906 5.54816C18.1777 3.5926 14.9449 3.41482 12.6881 5.07408L12.5051 5.1926L12.3221 5.07408C11.2852 4.30371 10.0652 3.94816 8.84532 3.94816Z" fill="#333333"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

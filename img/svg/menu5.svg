@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: transparent;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <rect class="cls-1" width="43" height="43"/>
+      <g>
+        <path class="cls-2" d="M6.2,14.4h6.7v-6.7h-6.7v6.7ZM7.2,8.71h4.7v4.7h-4.7v-4.7Z"/>
+        <path class="cls-2" d="M6.2,34.91h6.7v-6.7h-6.7v6.7ZM7.2,29.22h4.7v4.7h-4.7v-4.7Z"/>
+        <path class="cls-2" d="M10.05,26.4v-10.17c0-.28-.22-.5-.5-.5s-.5.22-.5.5v10.17c0,.28.22.5.5.5s.5-.22.5-.5Z"/>
+        <path class="cls-2" d="M30.51,7.71v6.7h6.7v-6.7h-6.7ZM36.2,13.4h-4.7v-4.7h4.7v4.7Z"/>
+        <path class="cls-2" d="M30.51,34.91h6.7v-6.7h-6.7v6.7ZM31.51,29.22h4.7v4.7h-4.7v-4.7Z"/>
+        <path class="cls-2" d="M34.36,26.4v-10.17c0-.28-.22-.5-.5-.5s-.5.22-.5.5v10.17c0,.28.22.5.5.5s.5-.22.5-.5Z"/>
+        <path class="cls-2" d="M28.26,10.06h-13.1c-.28,0-.5.22-.5.5s.22.5.5.5h13.1c.28,0,.5-.22.5-.5s-.22-.5-.5-.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

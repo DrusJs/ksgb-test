@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 33.02">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <g>
+        <g>
+          <path class="cls-1" d="M7.7,15.43v-4.97c2.68,0,4.87-2.24,5.07-5.08"/>
+          <path class="cls-1" d="M12.78,5.37c.54-.85,1.61-2.28,3.47-3.39,3.14-1.87,6.52-1.5,7.48-1.36v26.56"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="26.64" y1="15.85" x2="30.5" y2="15.85"/>
+          <polyline class="cls-1" points="26.47 6.77 30.5 6.77 30.5 32.47 22.16 32.47"/>
+          <line class="cls-1" x1="30.41" y1="9.98" x2="28.82" y2="9.98"/>
+          <line class="cls-1" x1="29.93" y1="24.13" x2="28.34" y2="24.13"/>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-2" x=".5" y="17.87" width="18.98" height="14.65" rx="3.1" ry="3.1"/>
+        <path class="cls-2" d="M19,27.63h-5.93c-1.31,0-2.37-1.09-2.37-2.44h0c0-1.35,1.06-2.44,2.37-2.44h5.93"/>
+        <ellipse class="cls-3" cx="13.55" cy="25.19" rx=".95" ry=".98"/>
+      </g>
+    </g>
+  </g>
+</svg>
