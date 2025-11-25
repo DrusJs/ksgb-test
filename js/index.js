@@ -138,3 +138,47 @@ acceptfitler.addEventListener('click', function() {
     filterhead.classList.remove('active');
     filtercontent.classList.remove('active');
 });
+
+
+const accordionInputs = document.querySelectorAll('.favorite-accordion-input');
+    
+accordionInputs.forEach(accordionInput => {
+    const inputWrapper = accordionInput.querySelector('.input-wrapper');
+    const inputField = accordionInput.querySelector('input');
+    const textarea = accordionInput.querySelector('.textarea');
+    const charCounter = accordionInput.querySelector('.char-counter');
+    
+    inputWrapper.addEventListener('click', function() {
+        accordionInput.classList.add('active');
+        textarea.focus();
+    });
+    
+    textarea.addEventListener('blur', function() {
+        accordionInput.classList.remove('active');
+        
+        if (textarea.value.trim() !== '') {
+            inputField.value = textarea.value;
+        }
+        
+        textarea.value = '';
+        charCounter.textContent = '0/255';
+    });
+    
+    textarea.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            textarea.blur();
+        }
+    });
+    
+    textarea.addEventListener('input', function() {
+        const currentLength = textarea.value.length;
+        charCounter.textContent = `${currentLength}/255`;
+        
+        if (currentLength > 240) {
+            charCounter.style.color = '#fe3f3fff';
+        } else {
+            charCounter.style.color = '#3b3b3b';
+        }
+    });
+});
