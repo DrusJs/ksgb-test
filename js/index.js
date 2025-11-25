@@ -8,6 +8,10 @@ document.getElementById('price-visible-button').addEventListener('click', functi
     document.querySelector('.basket-inner').classList.toggle('js-price-visible');
 });
 
+document.getElementById('favorite-button').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
+
 document.querySelectorAll('.favorite-accordion-head').forEach(function(head) {
     head.addEventListener('click', function() {
         this.closest('.favorite-accordion').classList.toggle('active');
