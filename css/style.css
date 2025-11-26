@@ -1,4 +1,4 @@
-@import "font/font.css";
+@import "../font/font.css";
 
 body{
     overflow: hidden;
@@ -87,6 +87,7 @@ body {
     pointer-events: none;
     transform: translateX(0px) translateY(0px);
     transition: 0.3s ease-in-out;
+    transition-delay: 0.3s;
 }
 
 .favorite-button.active:hover .main-menu-item-desc.hover-add {
