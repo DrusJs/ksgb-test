@@ -182,3 +182,84 @@ accordionInputs.forEach(accordionInput => {
         }
     });
 });
+
+function initSearchDropdown(inputSelector, dropdownSelector) {
+  const input = document.querySelector(inputSelector);
+  const clear = input.parentElement.querySelector('button');
+  const dropdown = document.querySelector(dropdownSelector);
+  const items = dropdown.querySelectorAll('li');
+
+  input.addEventListener('focus', function() {
+    dropdown.classList.add('active');
+    items.forEach(item => {
+      item.style.display = 'block';
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest(inputSelector) && !e.target.closest(dropdownSelector)) {
+      dropdown.classList.remove('active');
+    }
+  });
+
+  input.addEventListener('input', function() {
+    const searchText = this.value.toLowerCase();
+    let hasMatches = false;
+
+    if (searchText.length > 0) {
+      clear.classList.add('active');
+    } else {
+      clear.classList.remove('active');
+    }
+
+    items.forEach(function(item) {
+      const itemText = item.textContent.toLowerCase();
+      const originalText = item.textContent;
+      
+      item.innerHTML = originalText;
+      
+      if (searchText.length > 0) {
+        if (itemText.includes(searchText)) {
+          const startIndex = itemText.indexOf(searchText);
+          const endIndex = startIndex + searchText.length;
+          const before = originalText.substring(0, startIndex);
+          const match = originalText.substring(startIndex, endIndex);
+          const after = originalText.substring(endIndex);
+          
+          item.innerHTML = `${before}<span>${match}</span>${after}`;
+          item.style.display = 'block';
+          hasMatches = true;
+        } else {
+          item.style.display = 'none';
+        }
+      } else {
+        item.style.display = 'block';
+      }
+    });
+  });
+
+  clear.addEventListener('click', function() {
+    input.value = '';
+    clear.classList.remove('active');
+    
+    items.forEach(item => {
+      item.style.display = 'block';
+      item.innerHTML = item.textContent;
+    });
+  });
+
+  items.forEach(item => {
+    item.addEventListener('click', function() {
+      const selectedText = this.textContent;
+      input.value = selectedText;
+      dropdown.classList.remove('active');
+      
+      items.forEach(item => {
+        item.innerHTML = item.textContent;
+        item.style.display = 'block';
+      });
+    });
+  });
+}
+
+initSearchDropdown('.basket-input', '.basket-select-dropdown');
