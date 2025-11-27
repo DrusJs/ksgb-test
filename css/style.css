@@ -932,10 +932,8 @@ body {
 .menu-block-inner .menu-scroll {
     overflow-x: hidden;
     overflow-y: auto;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 150px);
 }
-
-
 
 .filter-form {
     width: 100%;
