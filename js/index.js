@@ -1,3 +1,11 @@
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+    }, 500);
+});
+
 document.getElementById('basket-button').addEventListener('click', function() {
     document.querySelector('.basket-container').classList.toggle('active');
     document.querySelector('.base-actions').classList.toggle('active');
@@ -15,6 +23,13 @@ document.getElementById('favorite-button').addEventListener('click', function() 
 document.querySelectorAll('.favorite-accordion-head').forEach(function(head) {
     head.addEventListener('click', function() {
         this.closest('.favorite-accordion').classList.toggle('active');
+    });
+});
+
+
+document.querySelectorAll('.favorite-accordion-info').forEach(function(item) {
+    item.addEventListener('click', function() {
+        this.closest('.favorite-accordion-item').classList.toggle('active');
     });
 });
 

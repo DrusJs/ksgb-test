@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<div class="preloader">
+    <video src="img/preloader_ksgb.mp4" muted autoplay loop></video>
+</div>
+
 <div id="container">
     <div class="main-menu-container">
         <div class="main-menu-item" id="button-favorite" data-menu="menu-section1">
@@ -79,150 +83,450 @@
                 <input type="text" value="+7 (925) 145-89-29" placeholder="+7 (925) 145-89-29">
             </div>
             <button class="button-primary button-fit">Начать работу с клиентом</button>
-            <div class="favorite-accordion">
-                <div class="favorite-accordion-head">
-                    <img src="img/svg/favlg.svg" alt="">
-                    <p>Избранное клиента</p>
-                    <img class="rotate-chev" src="img/svg/chevron.svg" alt="">
+            <div class="scroll-container">
+                <div class="favorite-accordion">
+                    <div class="favorite-accordion-head">
+                        <img src="img/svg/favlg.svg" alt="">
+                        <p>Избранное клиента</p>
+                        <img class="rotate-chev" src="img/svg/chevron.svg" alt="">
+                    </div>
+                    <div class="favorite-accordion-dropdown">
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
+                            </div>
+                            <div class="absolute-loader active">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span class="edit">ПР №___</span>
+                            </div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
+                            </div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="7" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="favorite-accordion-dropdown scroll-container">
-                    <div class="favorite-accordion-item">
-                        <div class="favorite-accordion-info">
-                            <img src="img/prev-item.png" alt="" class="prev">
-                            <div>
-                                <p>№00000000</p>
-                                <p>г. Нижний новгород</p>
+                <div class="favorite-accordion">
+                    <div class="favorite-accordion-head">
+                        <img src="img/svg/favlg.svg" alt="">
+                        <p>Избранное клиента</p>
+                        <img class="rotate-chev" src="img/svg/chevron.svg" alt="">
+                    </div>
+                    <div class="favorite-accordion-dropdown">
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
                             </div>
-                            <span>ПР №123</span>
-                        </div>
-                        <div class="absolute-loader active">
-                            <div class="loader-line"></div>
-                        </div>
-                        <div class="favorite-accordion-actions">
-                            <button class="icon-button">
-                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
-                                Предрасчет
-                            </button>
-                            <button class="icon-button disabled">
-                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
-                                Отправить клиенту
-                            </button>
-                            <button class="icon-button">
-                                <img src="img/svg/delete.svg" alt="Удалить">
-                                Удалить
-                            </button>
-                        </div>
-                        <div class="favorite-accordion-price">                        
-                            <button class="price-visible-button"></button>
-                            <div class="favorite-item-price">
-                                <span class="price">119 781 ₽</span>
-                                <span class="price-prev">160 915 ₽</span>
-                                <span class="price-act">- 13 751 ₽</span>
-                                <span class="price-percent">- 25 %</span>
+                            <div class="absolute-loader active">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="favorite-accordion-input">
-                            <div class="input-wrapper input-border">
-                                <label>Комментарий <span>|</span></label>
-                                <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span class="edit">ПР №___</span>
                             </div>
-                            <div class="textarea-wrapper">
-                                <textarea class="textarea" rows="6" maxlength="255"></textarea>
-                                <div class="char-counter">0/255</div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
+                            </div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="7" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="separate"></div>
-                    <div class="favorite-accordion-item">
-                        <div class="favorite-accordion-info">
-                            <img src="img/prev-item.png" alt="" class="prev">
-                            <div>
-                                <p>№00000000</p>
-                                <p>г. Нижний новгород</p>
-                            </div>
-                            <span class="edit">ПР №___</span>
-                        </div>
-                        <div class="absolute-loader">
-                            <div class="loader-line"></div>
-                        </div>
-                        <div class="favorite-accordion-actions">
-                            <button class="icon-button">
-                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
-                                Предрасчет
-                            </button>
-                            <button class="icon-button disabled">
-                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
-                                Отправить клиенту
-                            </button>
-                            <button class="icon-button disabled">
-                                <img src="img/svg/delete.svg" alt="Удалить">
-                                Удалить
-                            </button>
-                        </div>
-                        <div class="favorite-accordion-price">                        
-                            <button class="price-visible-button"></button>
-                            <div class="favorite-item-price">
-                                <span class="price">119 781 ₽</span>
-                                <span class="price-prev">160 915 ₽</span>
-                                <span class="price-act">- 13 751 ₽</span>
-                                <span class="price-percent">- 25 %</span>
-                            </div>
-                        </div>
-                        <div class="favorite-accordion-input">
-                            <div class="input-wrapper input-border">
-                                <label>Комментарий <span>|</span></label>
-                                <input type="text" value="клиент ушел подумать" placeholder="" readonly>
-                            </div>
-                            <div class="textarea-wrapper">
-                                <textarea class="textarea" rows="6" maxlength="255"></textarea>
-                                <div class="char-counter">0/255</div>
-                            </div>
-                        </div>
+                </div>
+                <div class="favorite-accordion">
+                    <div class="favorite-accordion-head">
+                        <img src="img/svg/favlg.svg" alt="">
+                        <p>Избранное клиента</p>
+                        <img class="rotate-chev" src="img/svg/chevron.svg" alt="">
                     </div>
-                    <div class="separate"></div>
-                    <div class="favorite-accordion-item">
-                        <div class="favorite-accordion-info">
-                            <img src="img/prev-item.png" alt="" class="prev">
-                            <div>
-                                <p>№00000000</p>
-                                <p>г. Нижний новгород</p>
+                    <div class="favorite-accordion-dropdown scroll-container">
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
                             </div>
-                            <span>ПР №123</span>
-                        </div>
-                        <div class="absolute-loader">
-                            <div class="loader-line"></div>
-                        </div>
-                        <div class="favorite-accordion-actions">
-                            <button class="icon-button">
-                                <img src="img/svg/1C-icon.svg" alt="Предрасчет">
-                                Предрасчет
-                            </button>
-                            <button class="icon-button">
-                                <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
-                                Отправить клиенту
-                            </button>
-                            <button class="icon-button">
-                                <img src="img/svg/delete.svg" alt="Удалить">
-                                Удалить
-                            </button>
-                        </div>
-                        <div class="favorite-accordion-price">                        
-                            <button class="price-visible-button"></button>
-                            <div class="favorite-item-price">
-                                <span class="price">119 781 ₽</span>
-                                <span class="price-prev">160 915 ₽</span>
-                                <span class="price-act">- 13 751 ₽</span>
-                                <span class="price-percent">- 25 %</span>
+                            <div class="absolute-loader active">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="favorite-accordion-input">
-                            <div class="input-wrapper input-border">
-                                <label>Комментарий <span>|</span></label>
-                                <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span class="edit">ПР №___</span>
                             </div>
-                            <div class="textarea-wrapper">
-                                <textarea class="textarea" rows="7" maxlength="255"></textarea>
-                                <div class="char-counter">0/255</div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button disabled">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="6" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="favorite-accordion-item">
+                            <div class="favorite-accordion-info">
+                                <img src="img/prev-item.png" alt="" class="prev">
+                                <div>
+                                    <p>№00000000</p>
+                                    <p>г. Нижний новгород</p>
+                                </div>
+                                <span>ПР №123</span>
+                            </div>
+                            <div class="absolute-loader">
+                                <div class="loader-line"></div>
+                            </div>
+                            <div class="favorite-accordion-actions">
+                                <button class="icon-button">
+                                    <img src="img/svg/1C-icon.svg" alt="Предрасчет">
+                                    Предрасчет
+                                </button>
+                                <button class="icon-button">
+                                    <img class="sm" src="img/svg/share-icon.svg" alt="Отправить клиенту">
+                                    Отправить клиенту
+                                </button>
+                                <button class="icon-button">
+                                    <img src="img/svg/delete.svg" alt="Удалить">
+                                    Удалить
+                                </button>
+                            </div>
+                            <div class="favorite-accordion-price">                        
+                                <button class="price-visible-button"></button>
+                                <div class="favorite-item-price">
+                                    <span class="price">119 781 ₽</span>
+                                    <span class="price-prev">160 915 ₽</span>
+                                    <span class="price-act">- 13 751 ₽</span>
+                                    <span class="price-percent">- 25 %</span>
+                                </div>
+                            </div>
+                            <div class="favorite-accordion-input">
+                                <div class="input-wrapper input-border">
+                                    <label>Комментарий <span>|</span></label>
+                                    <input type="text" value="клиент ушел подумать" placeholder="" readonly>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <textarea class="textarea" rows="7" maxlength="255"></textarea>
+                                    <div class="char-counter">0/255</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -557,28 +861,28 @@
                     <div class="accordion-dropdown">            
                         <div class="radio-item">
                             <input type="radio" name="ms52-i1" id="ms52-i1" class="hidden">
-                            <label for="ms52-i1" class="radio-content radio-row">
+                            <label for="ms52-i1" class="radio-content radio-row sqr-img">
                                 <img src="img/material0.png" alt="">
                                 Гиббро
                             </label>
                         </div>            
                         <div class="radio-item">
                             <input type="radio" name="ms52-i1" id="ms52-i2" class="hidden">
-                            <label for="ms52-i2" class="radio-content radio-row">
+                            <label for="ms52-i2" class="radio-content radio-row sqr-img">
                                 <img src="img/material1.png" alt="">
                                 Винга
                             </label>
                         </div>            
                         <div class="radio-item">
                             <input type="radio" name="ms52-i1" id="ms52-i3" class="hidden">
-                            <label for="ms52-i3" class="radio-content radio-row">
+                            <label for="ms52-i3" class="radio-content radio-row sqr-img">
                                 <img src="img/material2.png" alt="">
                                 Димовский
                             </label>
                         </div>           
                         <div class="radio-item">
                             <input type="radio" name="ms52-i1" id="ms52-i4" class="hidden">
-                            <label for="ms52-i4" class="radio-content radio-row">
+                            <label for="ms52-i4" class="radio-content radio-row sqr-img">
                                 <img src="img/material3.png" alt="">
                                 Мансуровский
                             </label>
@@ -593,28 +897,28 @@
                     <div class="accordion-dropdown">            
                         <div class="radio-item">
                             <input type="radio" name="ms53-i1" id="ms53-i1" class="hidden">
-                            <label for="ms53-i1" class="radio-content radio-row">
+                            <label for="ms53-i1" class="radio-content radio-row sqr-img">
                                 <img src="img/material0.png" alt="">
                                 Гиббро
                             </label>
                         </div>            
                         <div class="radio-item">
                             <input type="radio" name="ms53-i1" id="ms53-i2" class="hidden">
-                            <label for="ms53-i2" class="radio-content radio-row">
+                            <label for="ms53-i2" class="radio-content radio-row sqr-img">
                                 <img src="img/material1.png" alt="">
                                 Винга
                             </label>
                         </div>            
                         <div class="radio-item">
                             <input type="radio" name="ms53-i1" id="ms53-i3" class="hidden">
-                            <label for="ms53-i3" class="radio-content radio-row">
+                            <label for="ms53-i3" class="radio-content radio-row sqr-img">
                                 <img src="img/material2.png" alt="">
                                 Димовский
                             </label>
                         </div>           
                         <div class="radio-item">
                             <input type="radio" name="ms53-i1" id="ms53-i4" class="hidden">
-                            <label for="ms53-i4" class="radio-content radio-row">
+                            <label for="ms53-i4" class="radio-content radio-row sqr-img">
                                 <img src="img/material3.png" alt="">
                                 Мансуровский
                             </label>
@@ -635,7 +939,7 @@
             <div class="top-flex">
                 <p class="menu-title">Выбор памятника</p>
             </div>            
-            <div class="scroll-container">
+            <div class="scroll-container no-spacing">
                 <div class="accordion">
                     <div class="accordion-head">
                         <span>Памятник 1</span>
@@ -685,7 +989,7 @@
             <span>Состав комплекта:</span>
             <div class="basket-select">
                 <input type="text" class="basket-input" placeholder="Подразделение выдачи">
-                <button>x</button>
+                <button class="btn-close"></button>
             </div>
             <button class="price-visible-button" id="price-visible-button"></button>
             <ul class="basket-select-dropdown">  
@@ -774,6 +1078,28 @@
             </svg>
             <div class="main-menu-item-desc right-side hover-remove">Удалить из избранного</div>
             <div class="main-menu-item-desc right-side hover-add">Добавить в избранное</div>
+        </button>
+        <button class="base-action-button save-button" id="save-button">            
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="25" height="25" viewBox="0 0 1250.000000 1280.000000"
+            preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                    <path d="M0 6400 l0 -6400 6250 0 6250 0 -1 5368 0 5367 -1047 1032 -1047
+                    1033 -5202 0 -5203 0 0 -6400z m9390 3555 l0 -1935 -3140 0 -3140 0 0 1935 0
+                    1935 3140 0 3140 0 0 -1935z m1370 -6450 l0 -2455 -4510 0 -4510 0 0 2455 0
+                    2455 4510 0 4510 0 0 -2455z"/>
+                    <path d="M7210 9955 l0 -1205 695 0 695 0 0 1205 0 1205 -695 0 -695 0 0
+                    -1205z"/>
+                    <path d="M2650 4845 l0 -295 3600 0 3600 0 0 295 0 295 -3600 0 -3600 0 0
+                    -295z"/>
+                    <path d="M2652 3518 l3 -293 3595 0 3595 0 3 293 2 292 -3600 0 -3600 0 2
+                    -292z"/>
+                    <path d="M2650 2110 l0 -290 3600 0 3600 0 0 290 0 290 -3600 0 -3600 0 0
+                    -290z"/>
+                </g>
+            </svg>
+            <div class="main-menu-item-desc right-side">Сохранить</div>
         </button>
     </div>
 </div>
