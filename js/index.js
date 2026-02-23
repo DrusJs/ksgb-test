@@ -14,6 +14,12 @@ document.getElementById('basket-button').addEventListener('click', function() {
 document.getElementById('price-visible-button').addEventListener('click', function() {
     this.classList.toggle('active');
     document.querySelector('.basket-inner').classList.toggle('js-price-visible');
+    document.getElementById('sale-visible-button').classList.toggle('active');
+});
+
+document.getElementById('sale-visible-button').addEventListener('click', function() {
+    document.querySelector('.basket-inner').classList.toggle('js-sale-visible');
+    document.querySelector('.basket-total').classList.toggle('js-sale-visible');
 });
 
 document.getElementById('favorite-button').addEventListener('click', function() {
@@ -29,13 +35,39 @@ document.querySelectorAll('.favorite-accordion-head').forEach(function(head) {
 
 document.querySelectorAll('.favorite-accordion-info').forEach(function(item) {
     item.addEventListener('click', function() {
-        this.closest('.favorite-accordion-item').classList.toggle('active');
+        let currentItem = this.closest('.favorite-accordion-item');
+        
+        if (currentItem.classList.contains('active')) {
+            currentItem.classList.remove('active');
+        } else {
+            document.querySelectorAll('.favorite-accordion-item.active').forEach(function(activeItem) {
+                activeItem.classList.remove('active');
+            });
+            currentItem.classList.add('active');
+        }
+    });
+});
+
+document.querySelectorAll('.copy-num-button').forEach(function(item) {
+    item.addEventListener('click', function() {
+        let currentItem = this.closest('.icon-button-num');
+        let text = currentItem.querySelector('.copy-num').innerHTML
+        navigator.clipboard.writeText(text);        
     });
 });
 
 document.querySelectorAll('.favorite-accordion-price .price-visible-button').forEach(function(btn) {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function() {        
+        if (this.closest('.favorite-accordion-price').classList.contains('active')) {
+            this.closest('.favorite-accordion-price').classList.remove('js-sale-visible');            
+        }
+
         this.closest('.favorite-accordion-price').classList.toggle('active');
+    });
+});
+document.querySelectorAll('.favorite-accordion-price .sale-visible-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        this.closest('.favorite-accordion-price').classList.toggle('js-sale-visible');
     });
 });
 
