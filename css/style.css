@@ -676,6 +676,7 @@ body *::-webkit-scrollbar-thumb {
     background-color: #FFFFFF;
     padding: 14px 20px;
     position: relative;
+    min-height: 130px;
 }
 
 .favorite-accordion-item.active {
@@ -904,6 +905,10 @@ body *::-webkit-scrollbar-thumb {
 }
 
 .favorite-accordion-actions .icon-button:nth-child(3) img {
+    max-width: 18px;
+}
+
+.favorite-accordion-actions .icon-button:nth-child(4) img {
     max-width: 18px;
 }
 
